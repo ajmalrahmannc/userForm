@@ -1,0 +1,109 @@
+nav{
+    border-radius: 0;
+}
+.parentnav{
+    display: flex;
+}
+.heading{
+    color: white;
+}
+.links{
+    margin-left: 70%;
+    margin-top: 20px;
+}
+a{
+    margin: 30px;
+    color: white;
+    font-size: large;
+    text-align: center;
+}
+#summary{
+    color: white;
+    /* text-align: center; */
+    background-color: rgb(40, 47, 80);
+    min-height: 100%;
+    margin-top: -20px;
+    height: 110vh;
+}
+#summary h3{
+    text-align: center;
+}
+#summary li{
+    padding: 10px;
+}
+#summary li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+form{
+    /* margin-top: 50px; */
+    margin-left: 300px;
+    margin-right: 100px;
+    color: rgb(40, 47, 80);
+    border: 2px solid rgb(40, 47, 80);
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+}
+.formH2{
+    margin-left: 55%;
+    color: rgb(40, 47, 80);
+}
+.fields{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.name{
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.age{
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+.address{
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.phone{
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.occupation{
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+.email{
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.buttons{
+    margin-top: 30px;
+}
+button{
+    margin-left: 50px;
+}

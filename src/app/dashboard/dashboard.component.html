@@ -1,0 +1,45 @@
+<div>
+<nav class="navbar" style="background-color: gray;">
+    <div class="parentnav container-fluid">
+        <div class="heading">
+            <h2>Profile</h2>
+        </div>
+
+        <div class="links">
+            <a > Home </a>
+            <a routerLink="/profile">AddProfile </a>
+        </div>
+    </div>
+</nav>
+
+<div class="row">
+    <div id="summary" class="col-md-2" >
+        <h3>Summary</h3>
+        <ul>
+            <li class="options" routerLink="/view/1" type="none">option 1</li>
+            <li class="options" routerLink="/view/2" type="none">option 2</li>
+            <li class="options" routerLink="/view/3" type="none">option 3</li>
+            <li class="options" routerLink="/view/4" type="none">option 4</li>
+        </ul>
+    </div>
+
+    <div class="col-md-5" *ngFor="let data of viewData">
+        <div id="img" class="card" >
+            <div >
+                <img src="{{data.imageUrl}}" class="card-img-top" alt="no image">
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Name:{{data.name}}</h3>
+                <h4>Age:{{data.Age}}</h4>
+                <h4>Occupation:{{data.occupation}}</h4>
+                <!-- <a (click)="view(data.id) " class="btn btn-primary">View</a> -->
+                <div>
+                    <button  class="btn btn-primary">Edit</button>
+                    <button  (click)="view(data.id)" class="btn btn-primary">View</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>

@@ -1,0 +1,19 @@
+<div>
+<div>
+    <button class="btn btn-primary" id="backbtn" routerLink="">Back</button>
+</div>
+    <div class="views row">
+        <div class="image" *ngFor="let item of data">
+            <img src="{{item.imageUrl}}" class="card-img-top" alt="no image">
+        </div>
+        <div id="datas"  class="container" *ngFor="let item of data">
+            <h3>Name:{{item.name}}</h3><br>
+            <h4>Age:{{item.Age}}</h4>
+            <h4>Address:{{item.Address}}</h4>
+            <h4>Phone Number:{{item.phone}}</h4>
+            <h4>Occupation:{{item.occupation}}</h4>
+            <h4>Email:{{item.email}}</h4>
+        </div>
+    </div>    
+
+</div>

@@ -1,0 +1,67 @@
+<nav class="navbar" style="background-color: gray;">
+    <div class="parentnav container-fluid">
+        <div class="heading">
+            <h2>Profile</h2>
+        </div>
+
+        <div class="links">
+            <a routerLink=""> Home </a>
+            <a>AddProfile </a>
+        </div>
+    </div>
+</nav>
+
+<div class="row">
+    <div id="summary" class="col-md-2">
+        <h3>Summary</h3>
+        <ul>
+            <li class="options" type="none">option 1</li>
+            <li class="options" type="none">option 2</li>
+            <li class="options" type="none">option 3</li>
+            <li class="options" type="none">option 4</li>
+        </ul>
+    </div>
+    <div>
+        <button routerLink="" class="btn btn-primary">Back</button>
+    </div>
+    <div class="col-md-8">
+        <h2 class="formH2">New Profile</h2>
+        <form [formGroup]="profileForm">
+            <div class="fields">
+                <label>Name:</label>
+                <input formControlName="name" class="name"  type="text" placeholder="Enter your name"><br>
+                <div *ngIf="(this.profileForm.get('name')?.touched || this.profileForm.get('name')?.dirty)&& this.profileForm.get('name')?.errors"
+                    style="color: red;">Invalid Name</div>
+                <label>Age:</label>
+                <input formControlName="age" class="age"  type="text" placeholder="Enter your Age"><br>
+                <div *ngIf="(this.profileForm.get('age')?.touched || this.profileForm.get('age')?.dirty)&& this.profileForm.get('age')?.errors"
+                    style="color: red;">Invalid Age</div>
+                <label>Address:</label>
+                <input type="text" formControlName="address" class="address" placeholder="Enter your Address" name=""
+                    rows="5"><br>
+                <div *ngIf="(this.profileForm.get('address')?.touched || this.profileForm.get('address')?.dirty)&& this.profileForm.get('address')?.errors"
+                    style="color: red;">Invalid Address</div>
+                <label>Phone no:</label>
+                <input formControlName="number" class="phone" type="text"
+                    placeholder="Enter your Phone Number"><br>
+                <div *ngIf="(this.profileForm.get('number')?.touched || this.profileForm.get('number')?.dirty)&& this.profileForm.get('number')?.errors"
+                    style="color: red;">Invalid Number</div>
+                <label for="">Occupation</label>
+                <input formControlName="occupation" class="occupation" type="text"
+                    placeholder="Enter your Occupation"><br>
+                <div *ngIf="(this.profileForm.get('occupation')?.touched || this.profileForm.get('occupation')?.dirty)&& this.profileForm.get('occupation')?.errors"
+                    style="color: red;">Invalid Occupation</div>
+                <label>Email:</label>
+                <input formControlName="email" class="email" type="text" placeholder="Enter your Email">
+                <div *ngIf="(this.profileForm.get('email')?.touched || this.profileForm.get('email')?.dirty)&& this.profileForm.get('email')?.errors"
+                    style="color: red;">Invalid Email</div>
+
+
+                <div class="buttons">
+                    <button class="btn btn-danger" type="reset">Reset</button>
+                    <button class="btn btn-success" (click)="submit()">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

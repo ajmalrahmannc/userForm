@@ -1,0 +1,28 @@
+.views{
+    /* text-align: center; */
+    border: 2px solid rgb(40, 47, 80);
+    border-radius: 10px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    color: rgb(40, 47, 80);
+    /* background-color: rgb(40, 47, 80); */
+}
+.image{
+ text-align: center;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+#backbtn{
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#datas{
+    text-align: center;
+    padding-right: 620px;
+}

@@ -1,0 +1,63 @@
+nav{
+    border-radius: 0;
+}
+.parentnav{
+    display: flex;
+}
+.heading{
+    color: white;
+}
+.links{
+    margin-left: 70%;
+    margin-top: 20px;
+}
+a{
+    margin: 30px;
+    color: white;
+    font-size: large;
+    text-align: center;
+}
+#summary{
+    color: white;
+    /* text-align: center; */
+    background-color: rgb(40, 47, 80);
+    min-height: 100%;
+    margin-top: -20px;
+    height: 160vh;
+}
+#summary h3{
+    text-align: center;
+}
+#summary li{
+    padding: 10px;
+}
+#summary li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+img{
+    height: 200px;
+    width: 200px;
+    margin-top: 50px;
+    /* margin-left: 40%; */
+    /* transition: 15px;
+    transform: scale(15px); */
+    cursor: pointer;
+}
+#img:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+
+}
+.card{
+    border: 2px solid rgb(40, 47, 80);
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+button{
+    margin: 20px;
+}
+
